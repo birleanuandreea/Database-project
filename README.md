@@ -20,3 +20,5 @@ DETALII_CITITORI (READER_DETAILS): Contains additional information about readers
 FISA_IMPRUMUT (LOAN_RECORD): Keeps track of loans (date_of_loan, date_of_return, id_cititor, id_carte).
 
 The project also includes details about the structure and inter-relationship of the tables, the logical model, normalization of the tables (1NF, 2NF, 3NF), the relational model, and the constraints applied (PRIMARY KEY, FOREIGN KEY, UNIQUE KEY, NOT NULL, CHECK).
+
+![relational schema](images/Relational_1.png)
