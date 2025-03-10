@@ -1,4 +1,7 @@
 # Database-project
+The requirement of this project is as follows:
+This project involves designing a database system using relational databases and SQL. The objectives include formulating the problem, creating an Entity-Relationship diagram, documenting the design process, and testing the model with scripts. The database must have at least six tables with one-to-one and one-to-many relationships, and optionally many-to-many relationships. It should utilize primary and foreign keys, CHECK, UNIQUE, and NOT NULL constraints, and validate input data.
+
 This is an SQL database project for managing a library, allowing the organization of books by genres, authors, and publishers, as well as managing readers and loans. The application adheres to strict rules for borrowing books and manages reader details, enforcing the uniqueness of email addresses and phone numbers.
 
 The database is structured into seven main entities:
