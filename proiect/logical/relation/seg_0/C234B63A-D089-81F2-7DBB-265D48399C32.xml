@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Carte_Fisa_imprumut_fk" directorySegmentName="seg_0" id="C234B63A-D089-81F2-7DBB-265D48399C32">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-28 11:32:11 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<sourcePk>FDFF6F65-AE3C-C7A8-A11E-568070AD167D</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>este inregistrate in</nameOnSource>
+<nameOnTarget>inregistreaza</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DF30D479-656E-691A-3A58-EA0982F757F8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B361CF46-033A-66B0-BE2E-358AF70E6048</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

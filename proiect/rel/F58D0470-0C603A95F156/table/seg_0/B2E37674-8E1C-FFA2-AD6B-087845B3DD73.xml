@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2E37674-8E1C-FFA2-AD6B-087845B3DD73" name="Editura">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>80A4B5C6-6FCF-A5DF-D8AC-74A1B9F964D8</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_editura" id="F9CA0301-632F-4CDC-7F90-18FCBB9156FC">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>93544996-2128-6EF5-B80A-9567076D4A7C</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume" id="4CA70D56-7645-94E6-9CA2-ED5356D4719F">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>647436A7-D8BC-1397-FFBB-AC88868F6349</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>Editura_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume, &apos;([A-Z][a-z]+)( [A-Za-z]+)*&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adresa" id="41FE4467-9FB7-8F5E-493F-EAFCD08698DE">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>E65329FD-E74C-21CA-48AF-1016E2CDB4BD</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>Editura_adresa_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(adresa, &apos;([A-Z][a-z]+)( [A-Za-z]+)*&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon" id="47AB754E-A5B4-30CF-5126-ADE384A92F46">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>9DA387EC-E330-0E4B-5158-7A21F269A5D9</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>Editura_telefon_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(telefon, &apos;^07[0-9]{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="BF83AB6B-2A3F-05A6-C1D2-9F733913B3DA">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>4C8D3554-5364-35DF-A975-BB044CB07DAC</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>Editura_email_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0C20ED6F-675C-C8FE-32DF-200412E9EE9B" name="Editura_PK">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>5C7889B1-2DA7-FD9D-A4CF-8001A0EBFC93</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9CA0301-632F-4CDC-7F90-18FCBB9156FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FC8605A-8775-70F0-A88C-18907A6D7821" name="Editura_telefon_UN">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>AD2123FD-2AF2-FC4A-7F6B-1CC089A1188C</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47AB754E-A5B4-30CF-5126-ADE384A92F46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF02BC40-E9E9-6201-38AF-5C496A0A9C8A" name="Editura_email_UN">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>29E5F321-F0B1-F405-B6DA-F1E75235ED18</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF83AB6B-2A3F-05A6-C1D2-9F733913B3DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72F1AEAF-6065-E61D-5C4C-FC67B1BD0632" name="Editura_adresa_UN">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>9863D463-01D5-DABB-E566-D367B61161CA</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41FE4467-9FB7-8F5E-493F-EAFCD08698DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB45CE5E-F39F-5EE6-6184-9B6F55D41776" name="Cititor">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>DF3C967D-792D-C229-8741-45B67AC37721</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cititor" id="B78184D1-B06D-8CC9-9E79-5E58BB0459D1">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>098CF026-0038-60F9-1FD5-30EBBB07F319</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>1000</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume" id="1787EB5D-40BC-A306-BC59-930C9BA32E30">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>A79AD635-E178-3997-4071-5373B5421502</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>Cititor_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume, &apos;[A-Z]+[a-z]&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume" id="DAB02E44-8E48-59D5-F3B5-FA24624915E2">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>26919268-73C3-B08F-C87F-B3804BF07AD1</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>Cititor_prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(prenume, &apos;([A-Z]+[a-z]+)( [A-Z]+[a-z]+)*&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E2B61112-6EF5-4737-5F3C-E921995609FF" name="Cititor_PK">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>AB444A97-4AD4-0BFF-ACE7-F0819D8C10AC</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B78184D1-B06D-8CC9-9E79-5E58BB0459D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

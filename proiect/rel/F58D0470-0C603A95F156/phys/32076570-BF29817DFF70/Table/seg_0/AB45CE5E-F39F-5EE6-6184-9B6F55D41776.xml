@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Cititor" directorySegmentName="seg_0" id="AB45CE5E-F39F-5EE6-6184-9B6F55D41776">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="nume" id="1787EB5D-40BC-A306-BC59-930C9BA32E30">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_cititor" id="B78184D1-B06D-8CC9-9E79-5E58BB0459D1">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="prenume" id="DAB02E44-8E48-59D5-F3B5-FA24624915E2">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Cititor_PK" id="E2B61112-6EF5-4737-5F3C-E921995609FF">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

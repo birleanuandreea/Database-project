@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Editura" directorySegmentName="seg_0" id="B2E37674-8E1C-FFA2-AD6B-087845B3DD73">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="adresa" id="41FE4467-9FB7-8F5E-493F-EAFCD08698DE">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="telefon" id="47AB754E-A5B4-30CF-5126-ADE384A92F46">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nume" id="4CA70D56-7645-94E6-9CA2-ED5356D4719F">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="email" id="BF83AB6B-2A3F-05A6-C1D2-9F733913B3DA">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_editura" id="F9CA0301-632F-4CDC-7F90-18FCBB9156FC">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Editura_PK" id="0C20ED6F-675C-C8FE-32DF-200412E9EE9B">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Editura_telefon_UN" id="0FC8605A-8775-70F0-A88C-18907A6D7821">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Editura_adresa_UN" id="72F1AEAF-6065-E61D-5C4C-FC67B1BD0632">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Editura_email_UN" id="CF02BC40-E9E9-6201-38AF-5C496A0A9C8A">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

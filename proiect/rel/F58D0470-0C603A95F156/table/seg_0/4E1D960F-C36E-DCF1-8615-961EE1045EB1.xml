@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E1D960F-C36E-DCF1-8615-961EE1045EB1" name="Detalii_cititori">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>F8A9D273-47DF-CD10-641F-45F519578EB0</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="telefon" id="84713B4C-2874-F2B9-F362-9323E4EB4FB4">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>A14C7891-5176-E219-E553-93EB3F789465</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>Detalii_cititori_telefon_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(telefon, &apos;^07[0-9]{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="B72E9EE8-61A7-025E-8B72-0796DE579843">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>E5327603-D2E6-F8C7-B02F-3705014623A2</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>Detalii_cititori_email_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_inscriere" id="5C76727F-FA15-44F7-8211-AE4936B539DE">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>FE6879B1-8E50-60E0-1B71-55E536475490</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_cititor" id="6DBF85DC-46C8-E806-191A-013AAB6BBE38">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>58B5E897-761F-8A7F-E2E0-EB569F08448D</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E150F802-4166-2FB5-7F56-16E47F2B4CF7" referredColumn="B78184D1-B06D-8CC9-9E79-5E58BB0459D1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="29E1322C-13A1-3AE1-2455-66056332366A" name="Detalii_cititori_telefon_UN">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>AB73097F-B6CE-D19E-8864-28EA9E78FAEF</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84713B4C-2874-F2B9-F362-9323E4EB4FB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BC625CBC-2841-0B34-D3B5-5CCA0F766F0A" name="Detalii_cititori_email_UN">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>BC0B0F94-5DC6-A35E-28C1-57BD0A0E2604</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B72E9EE8-61A7-025E-8B72-0796DE579843"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7109671-5CF3-7072-927B-1898254517EB" name="Detalii_cititori__IDX">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F720BF8C-6079-D016-3790-C9E994B368F8</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="6DBF85DC-46C8-E806-191A-013AAB6BBE38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63B505EE-D6BC-F4C4-BAEE-D95B940E3417" name="Detalii_cititori_Cititor_FK">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>F720BF8C-6079-D016-3790-C9E994B368F8</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DBF85DC-46C8-E806-191A-013AAB6BBE38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

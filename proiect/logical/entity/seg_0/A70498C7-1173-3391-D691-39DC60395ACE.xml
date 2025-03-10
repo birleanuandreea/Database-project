@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A70498C7-1173-3391-D691-39DC60395ACE" name="Detalii_carti">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-28 12:51:10 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cantitate" id="978DA409-2141-58D9-D7AC-6CD6834AE766">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-28 13:06:58 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<constraintName>Detalii_carti_cantitate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>20</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="limba" id="3FDCF3FC-F9E0-82E0-B623-A637A1BC2884">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-28 12:59:28 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<constraintName>Detalii_carti_limba_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="engleza" description=""/>
+<valueDef value="franceza" description=""/>
+<valueDef value="germana" description=""/>
+<valueDef value="italiana" description=""/>
+<valueDef value="romana" description=""/>
+<valueDef value="rusa" description=""/>
+<valueDef value="spaniola" description=""/>
+</listOfValues>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriere" id="8112C831-0CF8-0ED5-26B5-F761FAE7B380">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-28 12:58:31 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="an_publicare" id="B70A49B8-1D72-7C6D-C168-101D8A822CBA">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-28 12:57:02 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<constraintName>Detalii_carti_an_publicare_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1900</beginValue>
+<endValue>2024</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="id_carte" id="4202606F-2CBF-79F5-AB15-347B82EA8D31">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-28 13:10:41 UTC</createdTime>
+<generatorID>87E8B413-8E70-068B-220D-3FC5EDAC8E09</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<referedAttribute>5DEF7995-9A61-1321-06EA-B8FD838321D6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

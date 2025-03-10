@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Cititor_Detalii_cititori_fk" directorySegmentName="seg_0" id="F720BF8C-6079-D016-3790-C9E994B368F8">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-28 13:19:10 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<sourcePk>AB444A97-4AD4-0BFF-ACE7-F0819D8C10AC</sourcePk>
+<targetPk>AB73097F-B6CE-D19E-8864-28EA9E78FAEF</targetPk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>sunt ale</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DF3C967D-792D-C229-8741-45B67AC37721</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>F8A9D273-47DF-CD10-641F-45F519578EB0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

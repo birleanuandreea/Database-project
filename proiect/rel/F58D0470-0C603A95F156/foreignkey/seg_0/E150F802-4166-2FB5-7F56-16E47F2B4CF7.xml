@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E150F802-4166-2FB5-7F56-16E47F2B4CF7" containerWithKeyObject="4E1D960F-C36E-DCF1-8615-961EE1045EB1" localFKIndex="63B505EE-D6BC-F4C4-BAEE-D95B940E3417" name="Detalii_cititori_Cititor_FK">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>F720BF8C-6079-D016-3790-C9E994B368F8</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<referredTableLongName>Cititor</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AB45CE5E-F39F-5EE6-6184-9B6F55D41776</referredTableID>
+<keyObject>E2B61112-6EF5-4737-5F3C-E921995609FF</keyObject>
+<referredKeyID>E2B61112-6EF5-4737-5F3C-E921995609FF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_cititor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

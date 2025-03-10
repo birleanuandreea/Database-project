@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E66C9C45-2B94-2170-8F46-CC266914A2D5" name="Carte">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>DF30D479-656E-691A-3A58-EA0982F757F8</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_carte" id="B33F59F5-B9E3-A29A-7699-FA7C2D8C7F1E">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>5DEF7995-9A61-1321-06EA-B8FD838321D6</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>100</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="titlu" id="8D1426F0-169F-8C04-CC32-C90AD9107D14">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>997A77A8-98E3-E28A-38FE-6C4DC93079B4</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>Carte_titlu_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(titlu, &apos;([A-Z][a-z]+)( [A-Za-z]+)*&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gen" id="47E8AB50-52AD-259D-729A-F81C77C71C4A">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>311FE637-9211-9AF7-E4A3-037370DAC41C</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>Carte_gen_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="Aventura" description=""/>
+<valueDef value="Dezvoltare personala" description=""/>
+<valueDef value="Istorie" description=""/>
+<valueDef value="Literatura clasica" description=""/>
+<valueDef value="Mister/Politist" description=""/>
+<valueDef value="Roman de dragoste" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_editura" id="74306389-E69E-4494-4966-89D220120AB4">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>2FE4FD26-68D1-01B5-65D7-3DABC82E1412</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69F67970-7BFB-B765-5BCF-5C43B906FC86" referredColumn="F9CA0301-632F-4CDC-7F90-18FCBB9156FC"/>
+</associations>
+</Column>
+<Column name="id_autor" id="13D3894A-3923-FE1C-A989-56FEFFE46C92">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>07C56B5E-09AA-B49A-E7AC-6A20F5388E11</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1EFBA93D-1313-F61F-AF8B-416233CE3021" referredColumn="BF0EA69B-0117-9349-0A66-28B65907B7D4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2F93433B-4703-4989-46BB-DFF52FAC6266" name="Carte_PK">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>FDFF6F65-AE3C-C7A8-A11E-568070AD167D</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B33F59F5-B9E3-A29A-7699-FA7C2D8C7F1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="525E580B-638C-A592-1F1B-FF1EF9EE9946" name="Carte_titlu_UN">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>D094DEE3-C2A0-2B6D-06AB-6B7D6F913BF9</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D1426F0-169F-8C04-CC32-C90AD9107D14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42BD379F-9727-0D52-127B-C4BD251807BC" name="Carte_Autor_FK">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>77025C49-CC93-158F-DD81-38AC04861049</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13D3894A-3923-FE1C-A989-56FEFFE46C92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9178351B-7658-90FA-CE7D-B331ED4B932C" name="Carte_Editura_FK">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>00CD82F8-2DEA-D573-2323-31E2CEABCFAB</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74306389-E69E-4494-4966-89D220120AB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

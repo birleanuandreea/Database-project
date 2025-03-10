@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_Fisa_imprumut_data_returnare" directorySegmentName="seg_0" id="CD3C8F4D-5E1F-C49E-A467-E39C348B245C">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:36:05 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+    IF( :new.data_returnare IS NOT NULL AND :new.data_returnare <= :new.data_imprumut )
+    THEN
+        RAISE_APPLICATION_ERROR( -20001,
+            'Data invalida: ' || TO_CHAR(:new.data_returnare, 'DD.MM.YYYY') || 
+            ' trebuie sa fie mai mare decat data de imprumut' );
+    END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>61BB2C64-981F-71B4-4B1A-20F5D8F2690E</table>
+</TriggerOraclev10g>

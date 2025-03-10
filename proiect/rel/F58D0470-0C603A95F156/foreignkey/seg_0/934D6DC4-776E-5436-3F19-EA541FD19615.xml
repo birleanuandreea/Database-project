@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="934D6DC4-776E-5436-3F19-EA541FD19615" containerWithKeyObject="61BB2C64-981F-71B4-4B1A-20F5D8F2690E" localFKIndex="16F0D1E4-DFCF-E6EF-89A2-5146C98EC1A7" name="Fisa_imprumut_Carte_FK">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>C234B63A-D089-81F2-7DBB-265D48399C32</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<referredTableLongName>Carte</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E66C9C45-2B94-2170-8F46-CC266914A2D5</referredTableID>
+<keyObject>2F93433B-4703-4989-46BB-DFF52FAC6266</keyObject>
+<referredKeyID>2F93433B-4703-4989-46BB-DFF52FAC6266</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_carte</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

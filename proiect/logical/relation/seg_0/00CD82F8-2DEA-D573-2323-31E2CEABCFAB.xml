@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Editura_Carte_fk" directorySegmentName="seg_0" id="00CD82F8-2DEA-D573-2323-31E2CEABCFAB">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-28 13:24:23 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<sourcePk>5C7889B1-2DA7-FD9D-A4CF-8001A0EBFC93</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>publica</nameOnSource>
+<nameOnTarget>este publicate de</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>80A4B5C6-6FCF-A5DF-D8AC-74A1B9F964D8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DF30D479-656E-691A-3A58-EA0982F757F8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

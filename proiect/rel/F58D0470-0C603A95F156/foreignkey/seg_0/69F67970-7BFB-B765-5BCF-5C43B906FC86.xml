@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="69F67970-7BFB-B765-5BCF-5C43B906FC86" containerWithKeyObject="E66C9C45-2B94-2170-8F46-CC266914A2D5" localFKIndex="9178351B-7658-90FA-CE7D-B331ED4B932C" name="Carte_Editura_FK">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>00CD82F8-2DEA-D573-2323-31E2CEABCFAB</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<referredTableLongName>Editura</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B2E37674-8E1C-FFA2-AD6B-087845B3DD73</referredTableID>
+<keyObject>0C20ED6F-675C-C8FE-32DF-200412E9EE9B</keyObject>
+<referredKeyID>0C20ED6F-675C-C8FE-32DF-200412E9EE9B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_editura</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

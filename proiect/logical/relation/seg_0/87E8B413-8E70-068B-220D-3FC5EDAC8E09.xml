@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Carte_Detalii_carti_fk" directorySegmentName="seg_0" id="87E8B413-8E70-068B-220D-3FC5EDAC8E09">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-28 13:10:41 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<sourcePk>FDFF6F65-AE3C-C7A8-A11E-568070AD167D</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>sunt ale</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DF30D479-656E-691A-3A58-EA0982F757F8</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>A70498C7-1173-3391-D691-39DC60395ACE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

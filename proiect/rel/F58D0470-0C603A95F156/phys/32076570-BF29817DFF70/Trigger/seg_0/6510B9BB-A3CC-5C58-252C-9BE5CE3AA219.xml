@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_scadere_cantitate_imprumut" directorySegmentName="seg_0" id="6510B9BB-A3CC-5C58-252C-9BE5CE3AA219">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:36:37 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+    IF :new.id_carte IS NOT NULL AND :new.data_returnare IS NULL THEN
+        UPDATE Detalii_carti
+        SET cantitate = cantitate - 1
+        WHERE id_carte = :new.id_carte;
+    END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>61BB2C64-981F-71B4-4B1A-20F5D8F2690E</table>
+</TriggerOraclev10g>

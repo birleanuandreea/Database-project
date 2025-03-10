@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_Fisa_imprumut_data_imprumut" directorySegmentName="seg_0" id="C0BFDD60-C8B4-C055-35D8-63EF2C9E9A7F">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:34:53 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+    IF( :new.data_imprumut > SYSDATE )
+    THEN
+        RAISE_APPLICATION_ERROR( -20001,
+            'Data invalida: ' || TO_CHAR(:new.data_imprumut, 'DD.MM.YYYY') || 
+            ' trebuie sa fie mai mica sau egala cu data curenta' );
+    END IF;
+    DECLARE
+        v_data_inscriere DATE;
+    BEGIN
+        SELECT data_inscriere
+        INTO v_data_inscriere
+        FROM Detalii_cititori
+        WHERE id_cititor = :new.id_cititor;
+
+        IF :new.data_imprumut < v_data_inscriere THEN
+            RAISE_APPLICATION_ERROR(-20003, 
+                'Data imprumut: ' || TO_CHAR(:new.data_imprumut, 'DD.MM.YYYY') || 
+                ' trebuie sa fie mai mare decat data de inscriere: ' || 
+                TO_CHAR(v_data_inscriere, 'DD.MM.YYYY'));
+        END IF;
+    END;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>61BB2C64-981F-71B4-4B1A-20F5D8F2690E</table>
+</TriggerOraclev10g>

@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="80A4B5C6-6FCF-A5DF-D8AC-74A1B9F964D8" name="Editura">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-27 12:30:46 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_editura" id="93544996-2128-6EF5-B80A-9567076D4A7C">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-27 12:30:52 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="647436A7-D8BC-1397-FFBB-AC88868F6349">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-27 12:31:11 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<constraintName>Editura_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume, &apos;([A-Z][a-z]+)( [A-Za-z]+)*&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adresa" id="E65329FD-E74C-21CA-48AF-1016E2CDB4BD">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-27 12:33:56 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<constraintName>Editura_adresa_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(adresa, &apos;([A-Z][a-z]+)( [A-Za-z]+)*&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefon" id="9DA387EC-E330-0E4B-5158-7A21F269A5D9">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-27 12:34:41 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<constraintName>Editura_telefon_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(telefon, &apos;^07[0-9]{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="4C8D3554-5364-35DF-A975-BB044CB07DAC">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-27 12:35:56 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<constraintName>Editura_email_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5C7889B1-2DA7-FD9D-A4CF-8001A0EBFC93" name="Editura PK">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-27 12:31:09 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>93544996-2128-6EF5-B80A-9567076D4A7C</newElementsIDs>
+<usedAttributes>
+<attributeRef>93544996-2128-6EF5-B80A-9567076D4A7C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="AD2123FD-2AF2-FC4A-7F6B-1CC089A1188C" name="Editura_telefon_uk">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-27 12:36:44 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<newElementsIDs>9DA387EC-E330-0E4B-5158-7A21F269A5D9</newElementsIDs>
+<usedAttributes>
+<attributeRef>9DA387EC-E330-0E4B-5158-7A21F269A5D9</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="29E5F321-F0B1-F405-B6DA-F1E75235ED18" name="Editura_email_uk">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-27 12:37:05 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<newElementsIDs>4C8D3554-5364-35DF-A975-BB044CB07DAC</newElementsIDs>
+<usedAttributes>
+<attributeRef>4C8D3554-5364-35DF-A975-BB044CB07DAC</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="9863D463-01D5-DABB-E566-D367B61161CA" name="Editura_adresa_uk">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-11-10 16:34:18 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<newElementsIDs>E65329FD-E74C-21CA-48AF-1016E2CDB4BD</newElementsIDs>
+<usedAttributes>
+<attributeRef>E65329FD-E74C-21CA-48AF-1016E2CDB4BD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

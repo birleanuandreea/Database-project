@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F1C471E1-A36A-6655-91A7-0B181055DCEF" containerWithKeyObject="61BB2C64-981F-71B4-4B1A-20F5D8F2690E" localFKIndex="DD0786F2-D62F-005D-1BCD-D5614AB8F953" name="Fisa_imprumut_Cititor_FK">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>7E86BC84-B54C-D055-A384-5C26E60E7F15</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<referredTableLongName>Cititor</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AB45CE5E-F39F-5EE6-6184-9B6F55D41776</referredTableID>
+<keyObject>E2B61112-6EF5-4737-5F3C-E921995609FF</keyObject>
+<referredKeyID>E2B61112-6EF5-4737-5F3C-E921995609FF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_cititor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

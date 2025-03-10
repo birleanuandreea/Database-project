@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Autor_Carte_fk" directorySegmentName="seg_0" id="77025C49-CC93-158F-DD81-38AC04861049">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-28 13:27:57 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<sourcePk>438BE8D0-4251-3059-4EE3-E9C53F14AB25</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>scrie</nameOnSource>
+<nameOnTarget>este scrisa de</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E8465FF7-3249-622F-C050-56F140CEE9BC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DF30D479-656E-691A-3A58-EA0982F757F8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

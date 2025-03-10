@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DF3C967D-792D-C229-8741-45B67AC37721" name="Cititor">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-27 12:23:07 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_cititor" id="098CF026-0038-60F9-1FD5-30EBBB07F319">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-27 12:23:29 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="A79AD635-E178-3997-4071-5373B5421502">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-27 12:23:49 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<constraintName>Cititor_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume, &apos;[A-Z]+[a-z]&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prenume" id="26919268-73C3-B08F-C87F-B3804BF07AD1">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-27 12:24:52 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<constraintName>Cititor_prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(prenume, &apos;([A-Z]+[a-z]+)( [A-Z]+[a-z]+)*&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefon" id="043E5F73-8E7A-1CAF-DBEE-43AB11B081F3">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-19 09:28:32 UTC</createdTime>
+<generatorID>F720BF8C-6079-D016-3790-C9E994B368F8</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<referedAttribute>A14C7891-5176-E219-E553-93EB3F789465</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AB444A97-4AD4-0BFF-ACE7-F0819D8C10AC" name="Cititor PK">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-11-10 17:39:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>098CF026-0038-60F9-1FD5-30EBBB07F319</newElementsIDs>
+<usedAttributes>
+<attributeRef>098CF026-0038-60F9-1FD5-30EBBB07F319</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

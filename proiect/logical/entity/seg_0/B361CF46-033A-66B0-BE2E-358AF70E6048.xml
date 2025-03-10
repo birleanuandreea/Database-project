@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B361CF46-033A-66B0-BE2E-358AF70E6048" name="Fisa_imprumut">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-28 11:31:52 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="data_imprumut" id="A31B47B2-CECB-C044-8BA1-1300524012F9">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-28 16:37:50 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_returnare" id="A04F0E9C-D177-A92C-2265-730C6AE65650">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-28 16:38:06 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_carte" id="D9874538-7184-2C21-7D16-EE380BFC0EBE">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-10-28 11:32:11 UTC</createdTime>
+<generatorID>C234B63A-D089-81F2-7DBB-265D48399C32</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<referedAttribute>5DEF7995-9A61-1321-06EA-B8FD838321D6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cititor" id="48C7107C-8F1A-15C0-BBC0-3C45BE41F363">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-11-10 18:07:37 UTC</createdTime>
+<generatorID>7E86BC84-B54C-D055-A384-5C26E60E7F15</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<referedAttribute>098CF026-0038-60F9-1FD5-30EBBB07F319</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D1EF4B06-6CEA-C314-3D48-9BDC31E11298" name="id_carte_id_cititor_uk">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-20 12:53:26 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="F58D0470-FA0A-DD64-2E01-0C603A95F156" value="true"/>
+</engineerTo>
+<newElementsIDs>D9874538-7184-2C21-7D16-EE380BFC0EBE,48C7107C-8F1A-15C0-BBC0-3C45BE41F363</newElementsIDs>
+<usedAttributes>
+<attributeRef>D9874538-7184-2C21-7D16-EE380BFC0EBE</attributeRef>
+<attributeRef>48C7107C-8F1A-15C0-BBC0-3C45BE41F363</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

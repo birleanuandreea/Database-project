@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="61BB2C64-981F-71B4-4B1A-20F5D8F2690E" name="Fisa_imprumut">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>B361CF46-033A-66B0-BE2E-358AF70E6048</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="data_imprumut" id="C07B402E-53F3-C47C-C5E6-DA64836F7EAF">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>A31B47B2-CECB-C044-8BA1-1300524012F9</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_returnare" id="E0F4EE70-4D37-717B-56C0-27193088C248">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>A04F0E9C-D177-A92C-2265-730C6AE65650</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_carte" id="43D7EEAC-9EC5-D874-D918-101FB55C9773">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>D9874538-7184-2C21-7D16-EE380BFC0EBE</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="934D6DC4-776E-5436-3F19-EA541FD19615" referredColumn="B33F59F5-B9E3-A29A-7699-FA7C2D8C7F1E"/>
+</associations>
+</Column>
+<Column name="id_cititor" id="30567552-040C-4771-7C37-50D6F061506D">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>48C7107C-8F1A-15C0-BBC0-3C45BE41F363</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1C471E1-A36A-6655-91A7-0B181055DCEF" referredColumn="B78184D1-B06D-8CC9-9E79-5E58BB0459D1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="14BA0B85-BD61-E80A-47CC-5F1266F0E731" name="id_carte_id_cititor_uk">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-20 12:54:38 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43D7EEAC-9EC5-D874-D918-101FB55C9773"/>
+<colUsage columnID="30567552-040C-4771-7C37-50D6F061506D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16F0D1E4-DFCF-E6EF-89A2-5146C98EC1A7" name="Fisa_imprumut_Carte_FK">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>C234B63A-D089-81F2-7DBB-265D48399C32</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43D7EEAC-9EC5-D874-D918-101FB55C9773"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD0786F2-D62F-005D-1BCD-D5614AB8F953" name="Fisa_imprumut_Cititor_FK">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>7E86BC84-B54C-D055-A384-5C26E60E7F15</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30567552-040C-4771-7C37-50D6F061506D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

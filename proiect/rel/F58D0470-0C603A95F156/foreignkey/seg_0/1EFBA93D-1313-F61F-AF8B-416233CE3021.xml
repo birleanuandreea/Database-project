@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1EFBA93D-1313-F61F-AF8B-416233CE3021" containerWithKeyObject="E66C9C45-2B94-2170-8F46-CC266914A2D5" localFKIndex="42BD379F-9727-0D52-127B-C4BD251807BC" name="Carte_Autor_FK">
+<createdBy>Andreea</createdBy>
+<createdTime>2024-12-07 17:32:25 UTC</createdTime>
+<generatorID>77025C49-CC93-158F-DD81-38AC04861049</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<referredTableLongName>Autor</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>430D9619-2E23-F8DD-1355-4E95C0F30646</referredTableID>
+<keyObject>0772D583-ED0F-3E7A-BDD2-BE39008CA4B1</keyObject>
+<referredKeyID>0772D583-ED0F-3E7A-BDD2-BE39008CA4B1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_autor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
