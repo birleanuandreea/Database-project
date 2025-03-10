@@ -1,6 +1,8 @@
 # Database-project
 This is a database project for managing a library, allowing the organization of books by genres, authors, and publishers, as well as managing readers and loans. The application adheres to strict rules for borrowing books and manages reader details, enforcing the uniqueness of email addresses and phone numbers.
 
+![logical schema](images/Logical.png)
+
 The database is structured into seven main entities:
 
 CARTE (BOOK): Stores information about available books (id_carte, title, genre, id_author, id_editura).
